@@ -1,4 +1,4 @@
-package DAY16;
+
 class MedianOfRowWiseSortedMatrix{
       static int UpperBound(int[] arr,int x,int n){
          int low=0,high=n-1;
