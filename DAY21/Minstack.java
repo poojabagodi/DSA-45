@@ -1,5 +1,5 @@
 package DAY21;
- import java.util.*;
+import java.util.*;
 class MinStack {
     Stack<Integer> s;
     Stack<Integer> m;
@@ -43,6 +43,4 @@ class MinStack {
  * obj.pop();
  * int param_3 = obj.top();
  * int param_4 = obj.getMin();
- */ {
-    
-}
+ */ 
