@@ -131,6 +131,19 @@ public class BST {
         path.remove(path.size()-1); // backtrack
     }
 
+    public static boolean validBSt(Node root,Node min ,Node max){
+        if(root==null){
+            return true;
+        }
+        if(min!=null && root.data<=min.data){
+            return false;
+        }
+        else if(max!=null && root.data>=max.data){
+            return false;
+        }
+        return validBSt(root.left, min, root) && validBSt(root.right, root, max);
+    }
+
 
 
     public static void main(String[] args) {
@@ -150,6 +163,7 @@ public class BST {
         System.out.println();
         ArrayList<Integer> path=new ArrayList<>();  
         printroottoleaf(root, path);
-        System.out.println("Root to leaf paths printed above.");    
+        System.out.println("Root to leaf paths printed above.");   
+        System.out.println(validBSt(root, null,null)) ;
     }
 }
