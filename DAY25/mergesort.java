@@ -31,12 +31,14 @@ public class mergesort {
         while(i<=mid){
              temp[k]=arr[i];
                 i++;
+                k++;
         }
 
 
         while(j<=ei){
              temp[k]=arr[j];
                 j++;
+                k++;
         }
 
 
