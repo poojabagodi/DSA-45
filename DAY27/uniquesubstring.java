@@ -42,6 +42,27 @@ public class uniquesubstring {
         return count+1;
     }
 
+//Longest word
+
+    public static String ans="";
+    public static void  longestword(Node root,StringBuilder str){
+        if(root==null){
+            return;
+        }
+        for(int i=0;i<26;i++){
+            if(root.children[i]!=null && root.children[i].eow==true){
+                char ch=(char)(i-'a');
+                str.append(ch);
+
+                if(str.length() >ans.length()){
+                    ans=str.toString();
+                }
+            }
+            longestword(root.children[i], str);
+            str.deleteCharAt(str.length()-1);
+        }
+    }
+
     public static void main(String[] args) {
         String str="ababa";
         for(int i=0;i<str.length();i++){
