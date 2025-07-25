@@ -1,6 +1,6 @@
 package DAY26;
 import java.util.*;
-public class connectropes {
+
 
 
 

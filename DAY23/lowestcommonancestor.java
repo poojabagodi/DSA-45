@@ -47,8 +47,8 @@ if (idx >= nodes.length || nodes[idx] == -1) {
     public static Node lca(Node root,Node n1, Node n2){
         ArrayList<Node> path1=new ArrayList<>();
         ArrayList<Node> path2=new ArrayList<>();
-        getPath(root,n1,path1);
-        getPath(root,n2,path2);
+        // getPath(root,n1,path1);
+        // getPath(root,n2,path2);
         int i=0;
         for(;i<path1.size() && i<path2.size();i++){
             if(path1.get(i)!=path2.get(i)){

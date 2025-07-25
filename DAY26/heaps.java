@@ -10,11 +10,11 @@ public class heaps {
             arr.add(data);
             
             int x=arr.size()-1;
-            int par=(x-1)/2;            i
+            int par=(x-1)/2;            
             while(arr.get(x)<arr.get(par)){
                 int temp=arr.get(x);
                 arr.set(x,arr.get(par));
-                arr.set(par,temp)
+                arr.set(par,temp);
             }
         }
         
@@ -27,7 +27,7 @@ public class heaps {
             int left=2*i+1;
             int right=2*i+2;
             int minidx=i;
-            if(left<arr.size() && arr.get(mididx)>arr.get(left)){
+            if(left<arr.size() && arr.get(minidx)>arr.get(left)){
                 minidx=left;
             }
             
@@ -50,7 +50,7 @@ public class heaps {
             
             
             int temp=arr.get(arr.size()-1);
-            arr.set(ar.size()-1,arr.get(0));
+            arr.set(arr.size()-1,arr.get(0));
             arr.set(0,temp);
             
             
@@ -94,7 +94,7 @@ public class heaps {
                 int temp=arr[0];
                 arr[0]=arr[i];
                 arr[i]=temp;
-                hepifymax(arr,0,i);
+                // hepifymax(arr,0,i);
             }
         }
     }
