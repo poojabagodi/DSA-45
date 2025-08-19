@@ -12,4 +12,4 @@ public class missingnum {
        return actualsum-sum;
     }
 }
-
+//knjkbjk
